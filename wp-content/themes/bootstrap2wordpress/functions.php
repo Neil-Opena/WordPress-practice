@@ -129,6 +129,13 @@ function bootstrap2wordpress_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'bootstrap2wordpress_scripts' );
 
+function new_excerpt_more($more){
+	global $post;
+	return '... <a class="moretag" href="'. get_permalink($post->ID) . '"> continue reading &raquo;';
+}
+
+add_filter('excerpt_more','new_excerpt_more');
+
 /**
  * Implement the Custom Header feature.
  */
