@@ -43,6 +43,9 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.io/normalize.css/
 	## Galleries
 13.0 Theme Specific Styles
 --------------------------------------------------------------*/
+.textwidget p{
+    color:black;
+}
 
 /*--------------------------------------------------------------
 ## Menus

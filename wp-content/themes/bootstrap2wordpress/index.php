@@ -53,7 +53,7 @@ get_header(); ?>
 					endif; ?>
 				</main>
 				<aside class="col-sm-4">
-					<?php get_sidebar(); ?>
+					<?php dynamic_sidebar('sidebar-1'); ?>
 				</aside>
 			</div>
 	</div>

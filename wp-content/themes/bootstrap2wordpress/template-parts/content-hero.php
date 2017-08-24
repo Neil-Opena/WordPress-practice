@@ -5,7 +5,6 @@
     $final_price = get_post_meta(11,'final_price',true);
     $course_url = get_post_meta(11,'course_url',true);
     $button_text = get_post_meta(11,'button_text',true);
-    $optin_text = get_post_meta(11,'optin_text',true);
 
  ?>
     <!-- Hero -->

@@ -31,28 +31,16 @@
                 <p><a href="/"><img src="<?php echo bloginfo('stylesheet_directory')?>/assets/img/logo.png" alt="Bootstrap to WordPress"></a></p>
             </div>
             <div class="col-sm-6">
-                <nav>
-                    <ul class="list-unstyled list-inline">
-                        <li>
-                            <a href="">Home</a>
-                        </li>
-                        <li>
-                            <a href="">Blog</a>
-                        </li>
-                        <li>
-                            <a href="">Resources</a>
-                        </li>
-                        <li>
-                            <a href="">Contact</a>
-                        </li>
-                        <li class="signup-link">
-                            <a href="">Sign up now</a>
-                        </li>
-                    </ul>
-                </nav>
+                <?php
+                    wp_nav_menu( array(
+                        'theme_location'=> 'menu-2',
+                        'container' => 'nav',
+                        'menu_class' => 'list-unstyled list-inline'
+                    ) );
+                ?>
             </div>
             <div class="col-sm-3">
-                <p class="pull-right">&copy; 2017 Neil Opena</p>
+                <p class="pull-right"><?php bloginfo('name') ?> &copy; <?php echo date('Y'); ?> Neil Opena</p>
             </div>
         </div>
     </footer>

@@ -52,8 +52,8 @@
 				<!-- -->
 				<?php
 					wp_nav_menu( array(
-						'theme_location'=> 'Primary',
-						'container' => 'ul',
+						'theme_location'=> 'menu-1',
+						'container' => 'nav',
 						'container_class' => 'navbar-collapse collapse',
 						'menu_class' => 'nav navbar-nav navbar-right'
 					) );
